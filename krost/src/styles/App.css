@@ -51,7 +51,7 @@
   overflow-y: hidden;
   overflow-x: hidden;
   margin: auto;
-  background-image: url('../images/vlee2.jpg');
+  background-image: url('../images/krost.jpg');
   /*box-shadow: inset 0 0 0 2000px rgba(29,29,29,0.28);*/
   box-shadow: inset 0 0 0 2000px rgba(126, 173, 206, 0.12);
   background-position: center;
@@ -67,19 +67,43 @@
 
 .dropdown-ham {
   position: relative;
+  list-style: none;
   background-image: url('http://res.cloudinary.com/beebeean09/image/upload/v1494389705/whiteham_shbvjd.png');
   background-repeat: no-repeat;
   background-size: 70px 47px;;
   width: 100px;
   height: 50px;
+  text-shadow:
+  0 0 4px rgba(0,0,0, 0.72),
+  0 0 14px rgba(0,0,0, 0.45);
+  cursor: pointer;
 }
 
-.dropdown-content, ul, li {
+.dropdown-content > ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown-content {
   position: absolute;
   list-style: none;
+  top: 37px;
+  right: 67px;
+  border: 1px solid white;
+  /*padding: 15px;*/
   padding: 0;
-
+  margin: 0;
+  width: 132px;
+  text-align: center;
+  background-color: rgba(181, 196, 241, 0.34);
 }
+
+.dropdown-content > ul:hover {
+  cursor: pointer;
+  background-color: rgba(29, 51, 115, 0.61);
+}
+
+
 
 .sm-container {
   /*position: relative;*/
