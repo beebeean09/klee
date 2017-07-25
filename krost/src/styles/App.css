@@ -51,7 +51,7 @@
   overflow-y: hidden;
   overflow-x: hidden;
   margin: auto;
-  background-image: url('../images/krost2.jpg');
+  background-image: url('../images/krost-ladder.jpg');
   /*box-shadow: inset 0 0 0 2000px rgba(29,29,29,0.28);*/
   box-shadow: inset 0 0 0 2000px rgba(126, 173, 206, 0.12);
   background-position: center;
@@ -85,6 +85,16 @@
 }
 
 .dropdown-content {
+  display: none;
+}
+
+.dropdown-content > ul:hover {
+  cursor: pointer;
+  background-color: rgba(29, 51, 115, 0.61);
+}
+
+.dropdown-ham.change > .dropdown-content {
+  display: inline-block;
   position: absolute;
   list-style: none;
   top: 37px;
@@ -98,14 +108,13 @@
   background-color: rgba(181, 196, 241, 0.34);
 }
 
-.dropdown-content > ul:hover {
-  cursor: pointer;
-  background-color: rgba(29, 51, 115, 0.61);
+.sm-button:hover {
+  text-shadow: none;
+  background-color: rgba(181, 196, 241, 0.34);
 }
 
 
-
-.sm-container {
+.sm-container, .name-header, a {
   /*position: relative;*/
   display: flex;
   justify-content: center;

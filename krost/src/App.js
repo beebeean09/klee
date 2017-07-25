@@ -2,11 +2,23 @@ import React, { Component } from 'react';
 import './styles/App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.addMenu = this.addMenu.bind(this);
+  }
+
+
+  addMenu(x) {
+    console.log(x.target);
+    x.target.classList.toggle('change');
+  }
+
   render() {
     return (
         <div id="bg">
           <div className="navbar">
-            <li className="dropdown-ham">
+            <li className="dropdown-ham" onClick={this.addMenu}>
               <ul className="dropdown-content">
                 <ul>About Me</ul>
                 <ul>Listen</ul>

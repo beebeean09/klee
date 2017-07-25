@@ -40,4 +40,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-ham')) {
+      let dropdown = document.getElementsByClassName("dropdown-ham");
+      console.log(dropdown);
+      dropdown[0].classList.remove('change');
+    }
+  }
+  </script>
 </html>
