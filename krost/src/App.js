@@ -7,6 +7,10 @@ class App extends Component {
     return (
         <div id="bg">
           <div className="bg-img"></div>
+          <a className="sm-button"
+            href="https://www.youtube.com/user/kristennnlee" 
+            target="_blank"
+            rel="noopener noreferrer">Check out my YouTube!</a>
         </div>
     );
   }
