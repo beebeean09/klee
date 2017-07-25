@@ -2,15 +2,30 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './styles/App.css';
 
+// <h1>K  R  I  S  T  E  N   L  E  E</h1>
 class App extends Component {
   render() {
     return (
         <div id="bg">
           <div className="bg-img"></div>
-          <a className="sm-button"
-            href="https://www.youtube.com/user/kristennnlee" 
-            target="_blank"
-            rel="noopener noreferrer">Check out my YouTube!</a>
+            <div className="sm-container">
+              <div className="name-header">
+                <p>K</p>
+                <p>R</p>
+                <p>I</p>
+                <p>S</p>
+                <p>T</p>
+                <p>E</p>
+                <p>N</p>
+                <p>L</p>
+                <p>E</p>
+                <p>E</p>
+              </div>
+              <a className="sm-button"
+                href="https://www.youtube.com/user/kristennnlee"
+                target="_blank"
+                rel="noopener noreferrer">WATCH THE VIDEO</a>
+            </div>
         </div>
     );
   }
