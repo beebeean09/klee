@@ -23,11 +23,33 @@
   to { transform: rotate(360deg); }
 }*/
 
-.splash-img {
+/*.splash-img {
   overflow: hidden;
   background-image: url('../images/vlee2.jpg');
   width: auto;
   height: 800px;
+  background-position: center;
+  background-size: cover;
+}*/
+
+#bg {
+  position:fixed;
+  top:0;
+  /*left:-50%;*/
+  width:200%;
+  height:75%;
+}
+.bg-img {
+  position:fixed;
+  top:0px;
+  left:0px;
+  /*z-index:900;*/
+  width:100%;
+  height: 100%;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  margin:auto;
+  background-image: url('../images/vlee2.jpg');
   background-position: center;
   background-size: cover;
 }

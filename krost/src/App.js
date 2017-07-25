@@ -5,15 +5,18 @@ import './styles/App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <div className="splash-img"></div>
+        <div id="bg">
+          <div className="bg-img"></div>
         </div>
-      </div>
     );
   }
 }
 
+// <div className="App">
+  // <div className="App-header">
+  //   <div className="splash-img"></div>
+  // </div>
+// </div>
 // <img alt="splash" className="splash-img" src="../src/images/vlee1.jpg"/>
 // <img src={logo} className="App-logo" alt="logo" />
 // <h2>Welcome to React</h2>
