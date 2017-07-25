@@ -33,7 +33,7 @@
 }*/
 
 #bg {
-  /*position: relative;*/
+  position: relative;
   font-family: 'Quicksand', sans-serif;
   /*top: 0;*/
   /*left:-50%;*/
@@ -56,6 +56,25 @@
   box-shadow: inset 0 0 0 2000px rgba(126, 173, 206, 0.12);
   background-position: center;
   background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  top: 17px;
+  right: 30px;
+}
+
+.dropdown-ham {
+  background-image: url('http://res.cloudinary.com/beebeean09/image/upload/v1494389705/whiteham_shbvjd.png');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-content, ul {
+  list-style: none;
+  padding: 0;
+
 }
 
 .sm-container {

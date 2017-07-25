@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './styles/App.css';
 
-// <h1>K  R  I  S  T  E  N   L  E  E</h1>
 class App extends Component {
   render() {
     return (
         <div id="bg">
+          <div className="navbar">
+            <div className="dropdown-ham">
+              <ul className="dropdown-content">
+                <ul>About Me</ul>
+                <ul>Listen</ul>
+                <ul>Live</ul>
+                <ul>Contact</ul>
+              </ul>
+            </div>
+          </div>
           <div className="bg-img"></div>
             <div className="sm-container">
               <div className="name-header">
                 <p>K</p>
                 <p>R</p>
-                <p>I</p>
+                <p>O</p>
                 <p>S</p>
                 <p>T</p>
-                <p>E</p>
-                <p>N</p>
-                <p>L</p>
-                <p>E</p>
-                <p>E</p>
               </div>
               <a className="sm-button"
                 href="https://www.youtube.com/user/kristennnlee"
