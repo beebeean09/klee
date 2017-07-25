@@ -62,16 +62,20 @@
   position: absolute;
   top: 17px;
   right: 30px;
+  color: white;
 }
 
 .dropdown-ham {
+  position: relative;
   background-image: url('http://res.cloudinary.com/beebeean09/image/upload/v1494389705/whiteham_shbvjd.png');
   background-repeat: no-repeat;
-  width: 50px;
+  background-size: 70px 47px;;
+  width: 100px;
   height: 50px;
 }
 
-.dropdown-content, ul {
+.dropdown-content, ul, li {
+  position: absolute;
   list-style: none;
   padding: 0;
 

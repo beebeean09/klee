@@ -6,14 +6,14 @@ class App extends Component {
     return (
         <div id="bg">
           <div className="navbar">
-            <div className="dropdown-ham">
+            <li className="dropdown-ham">
               <ul className="dropdown-content">
                 <ul>About Me</ul>
                 <ul>Listen</ul>
                 <ul>Live</ul>
                 <ul>Contact</ul>
               </ul>
-            </div>
+            </li>
           </div>
           <div className="bg-img"></div>
             <div className="sm-container">
