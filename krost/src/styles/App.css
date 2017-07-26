@@ -36,6 +36,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arsenal', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
 }
 
 .main {
@@ -149,6 +150,7 @@ body {
 
 .sm-container {
   margin-top: 161px;
+  margin-right: 51px;
 }
 
 .name-header {
@@ -164,7 +166,10 @@ body {
 }
 
 .name-header > p {
-  margin: 0 20px;
+  /*Josefin Sans
+  margin: 53px 20px 0 20px;*/
+  /*Arsenal*/
+  margin: 0 20px 23px 20px;
 }
 
 .sm-button {
@@ -177,7 +182,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  flex: 1 0 112px;
+  flex: 1 0 126px;
 }
 
 @media screen and (max-width: 568px) {
