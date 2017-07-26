@@ -14,60 +14,62 @@ class App extends Component {
     e.target.classList.toggle('change');
   }
 
+  // <div className="navbar-left">
+  // <li className="dropdown-ham" onClick={this.addMenu}>
+  //   <ul className="dropdown-content">
+  //     <ul>About Me</ul>
+  //     <ul>Listen</ul>
+  //     <ul>Live</ul>
+  //     <ul>Contact</ul>
+  //   </ul>
+  // </li>
+// </div>
   render() {
     return (
         <div id="bg">
           <div className="navbar">
-            <div className="navbar-right">
-              <a href="https://www.instagram.com/krostout/" target="_blank"
-              rel="noopener noreferrer">
-                <FontAwesome
-                 className='ig'
-                 name='instagram'
-                 size='2x'
-               /></a>
-              <a href="https://www.facebook.com/krostout" target="_blank"
-              rel="noopener noreferrer">
-                <FontAwesome
-                 className='fb'
-                 name='facebook-square'
-                 size='2x'
-               /></a>
-             <a href="https://www.youtube.com/krostout" target="_blank"
-              rel="noopener noreferrer">
-                <FontAwesome
-                 className='yt'
-                 name='youtube-play'
-                 size='2x'
-               /></a>
-              <a href="https://www.soundcloud.com/krostout" target="_blank"
-              rel="noopener noreferrer">
-                <FontAwesome
-                 className='sc'
-                 name='soundcloud'
-                 size='2x'
-               /></a>
-             <a href="http://www.krostout.bandcamp.com" target="_blank"
-              rel="noopener noreferrer">
-                <FontAwesome
-                 className='bc'
-                 name='bandcamp'
-                 size='2x'
-               /></a>
-            </div>
-            <div className="navbar-left">
-              <li className="dropdown-ham" onClick={this.addMenu}>
-                <ul className="dropdown-content">
-                  <ul>About Me</ul>
-                  <ul>Listen</ul>
-                  <ul>Live</ul>
-                  <ul>Contact</ul>
-                </ul>
-              </li>
-            </div>
+            <h1>Biography</h1>
+            <h1>Live</h1>
           </div>
           <div className="bg-img"></div>
             <div className="sm-container">
+              <div className="navbar-right">
+                <a href="https://www.instagram.com/krostout/" target="_blank"
+                  rel="noopener noreferrer">
+                  <FontAwesome
+                    className='ig'
+                    name='instagram'
+                    size='2x'
+                    /></a>
+                  <a href="https://www.facebook.com/krostout" target="_blank"
+                    rel="noopener noreferrer">
+                    <FontAwesome
+                      className='fb'
+                      name='facebook-square'
+                      size='2x'
+                      /></a>
+                    <a href="https://www.youtube.com/krostout" target="_blank"
+                      rel="noopener noreferrer">
+                      <FontAwesome
+                        className='yt'
+                        name='youtube-play'
+                        size='2x'
+                        /></a>
+                      <a href="https://www.soundcloud.com/krostout" target="_blank"
+                        rel="noopener noreferrer">
+                        <FontAwesome
+                          className='sc'
+                          name='soundcloud'
+                          size='2x'
+                          /></a>
+                        <a href="http://www.krostout.bandcamp.com" target="_blank"
+                          rel="noopener noreferrer">
+                          <FontAwesome
+                            className='bc'
+                            name='bandcamp'
+                            size='2x'
+                            /></a>
+                        </div>
               <div className="name-header">
                 <p>K</p>
                 <p>R</p>
@@ -75,15 +77,15 @@ class App extends Component {
                 <p>S</p>
                 <p>T</p>
               </div>
-              <a className="sm-button"
-                href="https://www.youtube.com/user/kristennnlee"
-                target="_blank"
-                rel="noopener noreferrer">WATCH THE VIDEO</a>
             </div>
         </div>
     );
   }
 }
+// <a className="sm-button"
+//   href="https://www.youtube.com/user/kristennnlee"
+//   target="_blank"
+//   rel="noopener noreferrer">CONNECT</a>
 
 // <div className="App">
   // <div className="App-header">
