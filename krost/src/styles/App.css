@@ -71,11 +71,16 @@ body {
   margin: 1em;
 }
 
-.navbar-right > a, .ig {
+.navbar-right > a, .ig, .fb, .sc, .bc, .yt {
   color: white;
+  margin: 0 5px;
   display: flex;
   text-decoration: none;
   text-shadow: none;
+}
+
+.ig:hover, .fb:hover, .sc:hover, .bc:hover, .yt:hover {
+  color: rgba(29, 51, 115, 0.61);
 }
 
 .navbar-right {
@@ -86,9 +91,6 @@ body {
 }
 
 .navbar-left {
-  /*position: absolute;
-  top: 17px;
-  right: 30px;*/
   display: flex;
   align-items: center;
   justify-content: center;

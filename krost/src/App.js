@@ -21,11 +21,40 @@ class App extends Component {
           <div className="navbar">
             <div className="navbar-right">
               <a href="https://www.instagram.com/krostout/" target="_blank"
-              rel="noopener noreferrer"><FontAwesome
-               className='ig'
-               name='instagram'
-               size='2x'
-             /></a>
+              rel="noopener noreferrer">
+                <FontAwesome
+                 className='ig'
+                 name='instagram'
+                 size='2x'
+               /></a>
+              <a href="https://www.facebook.com/krostout" target="_blank"
+              rel="noopener noreferrer">
+                <FontAwesome
+                 className='fb'
+                 name='facebook-square'
+                 size='2x'
+               /></a>
+             <a href="https://www.youtube.com/krostout" target="_blank"
+              rel="noopener noreferrer">
+                <FontAwesome
+                 className='yt'
+                 name='youtube-play'
+                 size='2x'
+               /></a>
+              <a href="https://www.soundcloud.com/krostout" target="_blank"
+              rel="noopener noreferrer">
+                <FontAwesome
+                 className='sc'
+                 name='soundcloud'
+                 size='2x'
+               /></a>
+              <a href="https://www.krostout.bandcamp.com" target="_blank"
+              rel="noopener noreferrer">
+                <FontAwesome
+                 className='bc'
+                 name='bandcamp'
+                 size='2x'
+               /></a>
             </div>
             <div className="navbar-left">
               <li className="dropdown-ham" onClick={this.addMenu}>
