@@ -46,7 +46,7 @@ body {
   /*top: 0;*/
   /*left:-50%;*/
   /*width: 200%;*/
-  height: 100vh;
+  /*height: 100vh;*/
 
 }
 .bg-img {
@@ -83,8 +83,8 @@ body {
 
 .ig:hover, .fb:hover, .sc:hover, .bc:hover, .yt:hover {
   color: rgb(204, 236, 255);
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
 }
 
 .navbar-right {
@@ -120,8 +120,8 @@ body {
   width: 60px;
   height: 50px;
   text-shadow:
-  0 0 4px rgba(0,0,0, 0.72),
-  0 0 14px rgba(0,0,0, 0.45);
+    0 0 4px rgba(0,0,0, 0.72),
+    0 0 14px rgba(0,0,0, 0.45);
   cursor: pointer;
 }
 
@@ -137,8 +137,8 @@ body {
 .dropdown-content > ul:hover {
   cursor: pointer;
   background-color: rgba(29, 51, 115, 0.61);
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
 }
 
 .dropdown-ham.change > .dropdown-content {
@@ -158,6 +158,8 @@ body {
 .sm-button:hover {
   text-shadow: none;
   background-color: rgba(204, 236, 255, 0.28);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
   /*background-color: rgba(181, 196, 241, 0.34);*/
 }
 
@@ -184,9 +186,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /*text-shadow:
-  0 0 4px rgba(0,0,0, 0.72),
-  0 0 14px rgba(0,0,0, 0.45);*/
 }
 
 .sm-container {
