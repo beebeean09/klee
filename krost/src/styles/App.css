@@ -95,7 +95,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em;
+  /*margin: 1em;*/
 }
 
 .navbar-left {
@@ -148,7 +148,7 @@ body {
 }
 
 .sm-container {
-  margin-top: 136px;
+  margin-top: 161px;
 }
 
 .name-header {
@@ -177,6 +177,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  flex: 1 0 112px;
 }
 
 @media screen and (max-width: 568px) {
@@ -189,7 +190,7 @@ body {
 @media screen and (max-width: 746px) {
   .name-header {
     font-size: 8em;
-  }  
+  }
 }
 
 
