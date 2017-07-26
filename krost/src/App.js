@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
+import FontAwesome from 'react-fontawesome';
 
 class App extends Component {
   constructor(props) {
@@ -9,23 +10,33 @@ class App extends Component {
   }
 
 
-  addMenu(x) {
-    console.log(x.target);
-    x.target.classList.toggle('change');
+  addMenu(e) {
+    e.target.classList.toggle('change');
   }
 
+  // <i className="fa fa-instagram" aria-hidden="true"></i>
   render() {
     return (
         <div id="bg">
           <div className="navbar">
-            <li className="dropdown-ham" onClick={this.addMenu}>
-              <ul className="dropdown-content">
-                <ul>About Me</ul>
-                <ul>Listen</ul>
-                <ul>Live</ul>
-                <ul>Contact</ul>
-              </ul>
-            </li>
+            <div className="navbar-right">
+              <a href="https://www.instagram.com/krostout/" target="_blank"
+              rel="noopener noreferrer"><FontAwesome
+               className='ig'
+               name='instagram'
+               size='2x'
+             /></a>
+            </div>
+            <div className="navbar-left">
+              <li className="dropdown-ham" onClick={this.addMenu}>
+                <ul className="dropdown-content">
+                  <ul>About Me</ul>
+                  <ul>Listen</ul>
+                  <ul>Live</ul>
+                  <ul>Contact</ul>
+                </ul>
+              </li>
+            </div>
           </div>
           <div className="bg-img"></div>
             <div className="sm-container">
