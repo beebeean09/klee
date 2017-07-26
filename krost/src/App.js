@@ -14,7 +14,6 @@ class App extends Component {
     e.target.classList.toggle('change');
   }
 
-  // <i className="fa fa-instagram" aria-hidden="true"></i>
   render() {
     return (
         <div id="bg">
@@ -48,7 +47,7 @@ class App extends Component {
                  name='soundcloud'
                  size='2x'
                /></a>
-              <a href="https://www.krostout.bandcamp.com" target="_blank"
+             <a href="http://www.krostout.bandcamp.com" target="_blank"
               rel="noopener noreferrer">
                 <FontAwesome
                  className='bc'

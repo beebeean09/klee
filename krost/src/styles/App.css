@@ -35,12 +35,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #bg {
   position: relative;
-  font-family: 'Quicksand', sans-serif;
   /*top: 0;*/
   /*left:-50%;*/
   /*width: 200%;*/
@@ -81,6 +80,8 @@ body {
 
 .ig:hover, .fb:hover, .sc:hover, .bc:hover, .yt:hover {
   color: rgba(29, 51, 115, 0.61);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
 }
 
 .navbar-right {
@@ -124,6 +125,8 @@ body {
 .dropdown-content > ul:hover {
   cursor: pointer;
   background-color: rgba(29, 51, 115, 0.61);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
 }
 
 .dropdown-ham.change > .dropdown-content {
@@ -175,17 +178,19 @@ body {
 }
 
 .sm-button {
-  /*pos ab
-  position: absolute;
-  top: 5em;
-  right: 14em;*/
   border: 4px solid white;
   border-radius: 5px;
   color: white;
   padding: 14px 22px;
-  /*opacity: 0.8;*/
   font-size: 28px;
   background: none;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    min-width: 500px;
+  }
+
 }
