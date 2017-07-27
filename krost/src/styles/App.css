@@ -1,28 +1,3 @@
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
-
 /*.splash-img {
   overflow: hidden;
   background-image: url('../images/vlee2.jpg');
@@ -35,8 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arsenal', sans-serif;
-  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .main {
@@ -51,7 +25,6 @@ body {
   /*left:-50%;*/
   /*width: 200%;*/
   /*height: 100vh;*/
-
 }
 
 .bg-img {
@@ -96,7 +69,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*margin: 1em;*/
 }
 
 .navbar-left {
@@ -123,25 +95,7 @@ body {
   /*background-color: rgba(181, 196, 241, 0.34);*/
 }
 
-/*.sm-button:hover .bg-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  margin: auto;
-  background-image: url('../images/krost-ladder.jpg');
-  box-shadow: inset 0 0 0 2000px rgba(126, 173, 206, 0.12);
-  background-position: center;
-  background-size: cover;
-}*/
-
-
 .sm-container, .name-header, a {
-  /*position: relative;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,24 +113,21 @@ body {
   justify-content: center;
   flex-direction: row;
   color: white;
-  font-size: 14em;
+  font-size: 12em;
   font-style: italic;
-  /*margin: 2em 0 1em 0;*/
   width: auto;
 }
 
 .name-header > p {
-  /*Josefin Sans
-  margin: 53px 20px 0 20px;*/
-  /*Arsenal*/
-  margin: 0 20px 23px 20px;
+  /*Josefin Sans*/
+  margin: 53px 20px 0 20px;
 }
 
 .sm-button {
   margin: 0 20px;
   border: 4px solid white;
   color: white;
-  padding: 7px 51px;
+  padding: 17px 52px 12px 52px;
   font-size: 28px;
   background: none;
   cursor: pointer;
@@ -197,8 +148,6 @@ body {
     font-size: 8em;
   }
 }
-
-
 
 /*CLICK DROPDOWN*/
 /*.dropdown-ham {
@@ -244,4 +193,19 @@ body {
   width: 132px;
   text-align: center;
   background-color: rgba(181, 196, 241, 0.34);
-}*/
+}
+
+ addMenu(e) {
+   e.target.classList.toggle('change');
+ }
+
+ <div className="navbar-left">
+ <li className="dropdown-ham" onClick={this.addMenu}>
+   <ul className="dropdown-content">
+     <ul>About Me</ul>
+     <ul>Listen</ul>
+     <ul>Live</ul>
+     <ul>Contact</ul>
+   </ul>
+ </li>
+ </div>*/
