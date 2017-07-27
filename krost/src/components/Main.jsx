@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
-import './styles/App.css';
+import '../styles/App.css';
 import FontAwesome from 'react-fontawesome';
 
 class Main extends Component {
-  
+  constructor(props) {
+    super(props);
+
+
+    this.clickAbout = this.clickAbout.bind(this);
+  }
+
+
+  clickAbout() {
+    let history = this.props.history;
+    return history.push('/about');
+  }
+
+  clickLive() {
+    debugger;
+    let history = this.props.history;
+    return history.push('/live');
+  }
+
   render() {
     return (
       <div className="main">
@@ -56,13 +74,21 @@ class Main extends Component {
             <p>T</p>
           </div>
           <div className="navbar">
-            <a className="sm-button" href="#">A b o u t</a>
-            <a className="sm-button" href="#">L i v e</a>
+            <input className="sm-button"
+              type="button"
+              value="A b o u t"
+              onClick={() => this.clickAbout()}/>
+            <input className="sm-button"
+              type="button"
+              value="L i v e"
+              onClick={() => this.clickLive()}/>
           </div>
         </div>
       </div>
     );
   }
 }
+// <a className="sm-button" href="">A b o u t</a>
+// <a className="sm-button" href="#">L i v e</a>
 
 export default Main;
