@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import FontAwesome from 'react-fontawesome';
-import { HashRouter, Route, Redirect, Switch, BrowserRouter } from 'react-router-dom';
+import {Route, Switch, BrowserRouter } from 'react-router-dom';
 import Main from './components/Main.jsx';
 import About from './components/About.jsx';
 import Live from './components/Live.jsx';

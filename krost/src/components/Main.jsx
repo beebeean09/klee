@@ -8,8 +8,8 @@ class Main extends Component {
 
 
     this.clickAbout = this.clickAbout.bind(this);
+    this.clickLive = this.clickLive.bind(this);
   }
-
 
   clickAbout() {
     let history = this.props.history;
@@ -17,7 +17,6 @@ class Main extends Component {
   }
 
   clickLive() {
-    debugger;
     let history = this.props.history;
     return history.push('/live');
   }
@@ -74,21 +73,13 @@ class Main extends Component {
             <p>T</p>
           </div>
           <div className="navbar">
-            <input className="sm-button"
-              type="button"
-              value="A b o u t"
-              onClick={() => this.clickAbout()}/>
-            <input className="sm-button"
-              type="button"
-              value="L i v e"
-              onClick={() => this.clickLive()}/>
+            <a className="sm-button" onClick={() => this.clickAbout()}>A b o u t</a>
+            <a className="sm-button" onClick={() => this.clickLive()}>L i v e</a>
           </div>
         </div>
       </div>
     );
   }
 }
-// <a className="sm-button" href="">A b o u t</a>
-// <a className="sm-button" href="#">L i v e</a>
 
 export default Main;
