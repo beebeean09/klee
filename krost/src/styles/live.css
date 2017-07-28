@@ -1,0 +1,39 @@
+.live-main {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  background-color: white;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.live-banner {
+  display: flex;
+  background-image: url('../images/krost-bridge1.jpg');
+  width: 1200px;
+  height: 300px;
+  background-position: center bottom 20%;
+  background-size: cover;
+  margin: 30px;
+  box-shadow: inset 0 0 0 2000px rgba(29, 29, 29, 0.06);
+  border-radius: 13px;
+}
+
+.live-list {
+  text-align: center;
+}
+
+.live-list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.live-list-items > h1 {
+  width: 25%;
+}
+
+.live-list-header {
+  border-bottom: 1px  solid grey;
+}
