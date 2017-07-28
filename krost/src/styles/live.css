@@ -4,6 +4,7 @@
   /*align-items: center;*/
   background-color: white;
   min-height: 100vh;
+  text-transform: uppercase;
   /*flex-direction: column;*/
 }
 
@@ -30,7 +31,7 @@
   flex-direction: row;
 }
 
-.live-list-items > h1 {
+.live-list-items > ul {
   width: 25%;
 }
 

@@ -7,15 +7,24 @@ class Live extends React.Component {
       <div className="live-main">
         <div className="live-banner"></div>
         <div className="live-list">
+          <h1>Live</h1>
           <div className="live-list-items live-list-header">
-            <h1>Date</h1>
-            <h1>Location</h1>
-            <h1>Tickets</h1>
+            <ul>Date</ul>
+            <ul>Venue</ul>
+            <ul>Location</ul>
+            <ul>Tickets</ul>
           </div>
           <div className="live-list-items">
-            <h1>July 30th</h1>
-            <h1>Orange County</h1>
-            <h1>FREE</h1>
+            <ul>July 30</ul>
+            <ul>DBA Bar & Gallery</ul>
+            <ul>Orange County</ul>
+            <ul>FREE</ul>
+          </div>
+          <div className="live-list-items">
+            <ul>Sept 16</ul>
+            <ul>Alta Coffee</ul>
+            <ul>Orange County</ul>
+            <ul>FREE</ul>
           </div>
         </div>
       </div>
