@@ -1,16 +1,16 @@
 .live-main {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   /*align-items: center;*/
   background-color: white;
   min-height: 100vh;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
 
 .live-banner {
   display: flex;
   background-image: url('../images/krost-bridge1.jpg');
-  width: 1200px;
+  /*width: 1200px;*/
   height: 300px;
   background-position: center bottom 20%;
   background-size: cover;
