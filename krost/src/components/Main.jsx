@@ -24,8 +24,8 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        <div id="bg">
-          <div className="bg-img"></div>
+        <div className="bg">
+          <div className="bg-img bg-img-main"></div>
         </div>
         <div className="sm-container">
           <div className="navbar-right">

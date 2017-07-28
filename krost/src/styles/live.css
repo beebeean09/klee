@@ -1,26 +1,33 @@
 .live-main {
-  /*display: flex;
-  justify-content: center;*/
-  /*align-items: center;*/
-  background-color: white;
-  min-height: 100vh;
+  /*background-color: white;*/
   text-transform: uppercase;
-  /*flex-direction: column;*/
+  margin: 2%;
+  padding: 2%;
+  background-color: rgba(128, 128, 128, 0.35);
+  color: white;
+  border-radius: 10px;
 }
 
 .live-banner {
   display: flex;
-  background-image: url('../images/krost-bridge1.jpg');
-  /*width: 1200px;*/
+  background-image: url('../images/krost-rocks.jpg');
   height: 300px;
-  background-position: center bottom 20%;
+  background-position: center bottom 35%;
   background-size: cover;
   margin: 30px;
   box-shadow: inset 0 0 0 2000px rgba(29, 29, 29, 0.06);
   border-radius: 13px;
 }
 
+.bg-img-live {
+  background-image: url('../images/krost-rocks.jpg');
+}
+
 .live-list {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
   text-align: center;
 }
 
@@ -36,5 +43,5 @@
 }
 
 .live-list-header {
-  border-bottom: 1px  solid grey;
+  border-bottom: 1px solid white;
 }
