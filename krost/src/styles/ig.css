@@ -1,0 +1,15 @@
+#instafeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#instafeed > a {
+  display: flex;
+  margin: 10px;
+}
+
+#ig-img {
+  width: 280px;
+}
