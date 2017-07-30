@@ -27,8 +27,8 @@ class Ig extends React.Component {
       get: 'user',
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
-      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a>{{caption}}</div>',
-      limit: 10
+      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a><p id="caption">{{caption}}</p></div>'
+      // limit: 10
     });
     feed.run();
   }
