@@ -23,14 +23,14 @@ class Ig extends React.Component {
     //   });
     //   console.log(this.state.info);
 
-    let feed = new Instafeed({
-      get: 'user',
-      userId: `${KEY.IG.user_id}`,
-      accessToken: `${KEY.IG.token}`,
-      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a>{{caption}}</div>',
-      limit: 10
-    });
-    feed.run();
+    // let feed = new Instafeed({
+    //   get: 'user',
+    //   userId: `${KEY.IG.user_id}`,
+    //   accessToken: `${KEY.IG.token}`,
+    //   template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a>{{caption}}</div>',
+    //   limit: 10
+    // });
+    // feed.run();
   }
 
 

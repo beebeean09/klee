@@ -9,7 +9,9 @@ class Live extends React.Component {
   render() {
     return(
       <div className="live-main">
-          <div className="live-banner"></div>
+          <div className="bg">
+            <div className="bg-img bg-img-live "></div>            
+          </div>
         <div className="live-list">
           <h1>Live</h1>
           <div className="live-list-items live-list-header">
