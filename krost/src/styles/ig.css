@@ -1,3 +1,10 @@
+.ig-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #instafeed {
   display: flex;
   justify-content: center;
@@ -20,8 +27,13 @@
 }
 
 #ig-img > a > img {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 187px;
+}
+
+#ig-img:hover {
+  opacity: 0.8;
+  background-color: grey;
 }
 
 #caption {

@@ -27,7 +27,8 @@ class Ig extends React.Component {
       get: 'user',
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
-      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a><p id="caption">{{caption}}</p></div>'
+      resolution: 'standard_resolution',
+      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a></div>'
       // limit: 10
     });
     feed.run();
@@ -36,7 +37,7 @@ class Ig extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="ig-main">
         <h1>Instagram</h1>
         <div id="instafeed">
         </div>
