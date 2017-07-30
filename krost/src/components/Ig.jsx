@@ -28,8 +28,18 @@ class Ig extends React.Component {
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
       resolution: 'standard_resolution',
-      template: '<div id="ig-img"><a href="{{link}}"><img src="{{image}}" /></a></div>'
-      // limit: 10
+      filter: function(image) {
+          let vidCount = 0;
+           if (image.type === 'image') {
+               image.template = '<img src="' + image.images.standard_resolution.url + '" />';
+           } else {
+               vidCount += 1;
+               image.template = `<video id="video${vidCount}"controls loop><source src="` + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
+           }
+           return true;
+       },
+      template: '<div id="ig-img"><a href="{{link}}">{{model.template}}</a></div>',
+      limit: 20
     });
     feed.run();
   }
