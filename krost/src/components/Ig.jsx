@@ -3,7 +3,6 @@ import * as KEY from './key.js';
 import Instafeed from 'instafeed.js';
 import '../styles/ig.css';
 
-
 class Ig extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +12,7 @@ class Ig extends React.Component {
 
   componentDidMount() {
     this.fetchPhotos();
+    this.playVideo();
   }
 
   fetchPhotos() {
@@ -32,7 +32,7 @@ class Ig extends React.Component {
            if (image.type === 'image') {
                image.template = '<img src="' + image.images.standard_resolution.url + '" />';
            } else {
-               image.template = '<video id=""controls loop><source src="' + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
+               image.template = '<video controls loop><source src="' + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
            }
            return true;
        },
@@ -40,6 +40,14 @@ class Ig extends React.Component {
       limit: 20
     });
     feed.run();
+  }
+
+  playVideo() {
+    let videos = document.getElementsByTagName('video');
+    for (let i = 0; i < videos.length; i++) {
+      videos[i].setAttribute("id", i + 1);
+    }
+    console.log(videos[1]);
   }
 
 
