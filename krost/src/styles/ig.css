@@ -60,15 +60,13 @@
 #shadow-root > #controller {
   display: none;
 }
-.fa-play {
 
-}
-.fa-play-circle {
-  color: rgba(255, 255, 255, 0.69);
+.fa-play-circle, .fa-play, .fa-play-circle-o {
+  color: rgba(255, 255, 255, 0.88);
   position: absolute;
-  font-size: 86px;
-  top: 106px;
-  left: 107px;
+  font-size: 50px;
+  top: 126px;
+  left: 130px;
 }
 
 .fa-hide {
