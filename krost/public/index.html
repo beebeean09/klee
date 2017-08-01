@@ -44,28 +44,26 @@
 
   <script>
   window.onclick = function(event) {
-    console.log(event);
     event.preventDefault();
     if (event.target.tagName === 'VIDEO') {
-      let playButton = event.target.previousElementSibling;
-      console.log(playButton);
-      console.log(playButton);
+      let playButton = event.target.previousElementSibling.classList;
       let video = document.getElementById(event.target.id);
       if (video.paused) {
-        // playButton.attributes.style.display = "none";
+        playButton.add('fa-hide');
         video.play();
       } else {
-        // playButton.attributes.style.display = "inline-block";
+        playButton.remove('fa-hide');
         video.pause();
       }
     } else if (event.target.tagName === 'I') {
       let iVideo = event.target.nextElementSibling;
       let video = document.getElementById(iVideo.id);
+      let playButton = iVideo.classList;
       if (video.paused) {
-        // playButton.attributes.style.display = "none";
+        playButton.add('fa-hide');
         video.play();
       } else {
-        // playButton.attributes.style.display = "inline-block";
+        playButton.remove('fa-hide');
         video.pause();
       }
     }
