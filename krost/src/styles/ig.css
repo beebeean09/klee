@@ -7,7 +7,6 @@
 
 #instafeed {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1000px;
@@ -23,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 18px;
   border: 1px solid grey;
   width: 293px;
   height: 293px;
@@ -70,6 +69,10 @@
   font-size: 86px;
   top: 106px;
   left: 107px;
+}
+
+.fa-hide {
+  display: none;
 }
 
 ::-webkit-scrollbar {
