@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/live.css';
 import '../styles/App.css';
-import ReactPlayer from 'react-player';
 
 // <div className="bg">
 //   <div className="bg-img bg-img-live"></div>
@@ -32,9 +31,6 @@ class Live extends React.Component {
             <ul>Alta Coffee</ul>
             <ul>506 31st St. Newport Beach, CA 92663</ul>
             <ul>FREE</ul>
-          </div>
-          <div>
-            <ReactPlayer url='https://www.instagram.com/p/BXJhVV5lmvb/?taken-by=krostout' playing />
           </div>
         </div>
       </div>

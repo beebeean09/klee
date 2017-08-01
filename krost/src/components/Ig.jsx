@@ -21,31 +21,25 @@ class Ig extends React.Component {
     //     this.setState({info: json});
     //   });
     //   console.log(this.state.info);
-
     let feed = new Instafeed({
       get: 'user',
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
       resolution: 'standard_resolution',
       filter: function(image) {
+          console.log(image);
            if (image.type === 'image') {
                image.template = '<img src="' + image.images.standard_resolution.url + '" />';
            } else {
-               image.template = '<video controls loop><source src="' + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
+               image.template = `<video id=${image.id} controls loop><source src="` + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
            }
            return true;
        },
-      template: '<div id="ig-img"><a href="{{link}}">{{model.template}}</a></div>',
-      limit: 20
+      template: '<div id="ig-img">{{model.template}}</div>',
+      limit: 10
     });
     feed.run();
-    // this.playVideo();
   }
-
-  playVideo() {
-
-  }
-
 
   render() {
     return(
