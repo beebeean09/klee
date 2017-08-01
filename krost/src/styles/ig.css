@@ -53,6 +53,12 @@
 #shadow-root > #controller {
   display: none;
 }
+.fa-play {
+
+}
+.fa-play-circle {
+  color: white;
+}
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;

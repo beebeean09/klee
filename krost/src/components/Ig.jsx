@@ -31,7 +31,9 @@ class Ig extends React.Component {
            if (image.type === 'image') {
                image.template = '<img src="' + image.images.standard_resolution.url + '" />';
            } else {
-               image.template = `<video id=${image.id} controls loop><source src="` + image.videos.standard_resolution.url + '" type="video/mp4"/></video>';
+            //  fa-play, fa-play-circle, fa-play-circle-o
+               image.template = `<div><i class="fa fa-play-circle" aria-hidden="true"></i>
+             <video id=${image.id} controls loop><source src="` + image.videos.standard_resolution.url + '" type="video/mp4"/></video></div>';
            }
            return true;
        },
