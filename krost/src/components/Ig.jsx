@@ -12,7 +12,6 @@ class Ig extends React.Component {
 
   componentDidMount() {
     this.fetchPhotos();
-    this.playVideo();
   }
 
   fetchPhotos() {
@@ -40,14 +39,11 @@ class Ig extends React.Component {
       limit: 20
     });
     feed.run();
+    // this.playVideo();
   }
 
   playVideo() {
-    let videos = document.getElementsByTagName('video');
-    for (let i = 0; i < videos.length; i++) {
-      videos[i].setAttribute("id", i + 1);
-    }
-    console.log(videos[1]);
+
   }
 
 
