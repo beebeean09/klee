@@ -44,8 +44,9 @@
 
   <script>
   window.onclick = function(event) {
-    console.log(event.target.tagName.includes('VIDEO'));
+    event.preventDefault();
     if (event.target.tagName.includes('VIDEO')) {
+      console.log(event);
       let video = document.getElementById(event.target.id);
       if (video.paused) {
         video.play();
