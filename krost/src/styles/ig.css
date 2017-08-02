@@ -41,6 +41,8 @@
   /*border: 1px solid grey;*/
   width: 293px;
   height: 293px;
+  background: #2f2f2f;
+  -webkit-transition: opacity .25s ease;
 }
 
 #ig-img > img {
@@ -60,9 +62,12 @@
   object-fit: cover;
 }
 
-#ig-img:hover {
-  opacity: 0.8;
-  background-color: grey;
+.img-video:hover {
+  opacity: 0.4;
+}
+
+.vsc-controller {
+  display: none;
 }
 
 #caption {
@@ -77,7 +82,7 @@
 }
 
 .fa-play-circle, .fa-play, .fa-play-circle-o {
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 225);
   position: absolute;
   font-size: 50px;
   top: 126px;
@@ -105,16 +110,6 @@
 .music {
   color: black;
   font-size: 80px;
-}
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
 video::-webkit-media-controls {

@@ -39,7 +39,7 @@ class Ig extends React.Component {
            } else {
             //  fa-play, fa-play-circle, fa-play-circle-o
                image.template = `<div style="cursor: pointer; position: relative; width: 293px; height: 293px; overflow: hidden;">
-               <i class="fa fa-play" aria-hidden="true"></i><video id=${image.id} controls>
+               <i class="fa fa-play" aria-hidden="true"></i><video class="img-video" id=${image.id} controls>
                  <source src="` + image.videos.standard_resolution.url + '" type="video/mp4"/></video></div>';
            }
            return true;
