@@ -49,10 +49,10 @@
       let video = document.getElementById(event.target.id);
       if (video.paused) {
         playButton.add('fa-hide');
-        // video.play();
+        video.play();
       } else {
         playButton.remove('fa-hide');
-        // video.pause();
+        video.pause();
       }
     } else if (event.target.tagName === 'I') {
       let iVideo = event.target.nextElementSibling;
@@ -60,10 +60,10 @@
       let playButton = iVideo.classList;
       if (video.paused) {
         playButton.add('fa-hide');
-        // video.play();
+        video.play();
       } else {
         playButton.remove('fa-hide');
-        // video.pause();
+        video.pause();
       }
     }
   }

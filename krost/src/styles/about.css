@@ -1,0 +1,11 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}

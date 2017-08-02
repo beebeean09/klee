@@ -44,7 +44,7 @@ class Ig extends React.Component {
            }
            return true;
        },
-      template: '<div id="ig-img"><a href={{link}}>{{model.template}}</a></div>',
+      template: '<div id="ig-img">{{model.template}}</div>',
       limit: 30
     });
     feed.run();
