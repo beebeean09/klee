@@ -98,7 +98,7 @@ body {
   /*background-color: rgba(181, 196, 241, 0.34);*/
 }
 
-.sm-container, .name-header, a {
+.sm-container, .name-header > a {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,9 @@
 import React from 'react';
 import * as KEY from './key.js';
 import Instafeed from 'instafeed.js';
-import ModalStyle from './ModalStyle.js';
-import Modal from 'react-modal';
 import '../styles/ig.css';
+import FontAwesome from 'react-fontawesome';
+import guitar from '../images/guitar.png';
 
 class Ig extends React.Component {
   constructor(props) {
@@ -53,12 +53,27 @@ class Ig extends React.Component {
   render() {
     return(
       <div className="ig-main">
-        <h1>Instagram</h1>
+        <div className="ig-header">
+          <h1>Instagram <a href="https://www.instagram.com/krostout/" target="_blank"
+            rel="noopener noreferrer">@krostout</a></h1>
+        </div>
         <div id="instafeed">
+        </div>
+        <div className="ig-footer">
+          <h1>Want to see more?</h1>
+          <a href="https://www.instagram.com/krostout/" target="_blank"
+            rel="noopener noreferrer">
+            <img src={guitar} alt="guitar" width="70px" height="70px"/>
+          </a>
         </div>
       </div>
     );
   }
 }
 
+// <FontAwesome
+//   className='music'
+//   name='music'
+//   size='2x'
+// />
 export default Ig;
