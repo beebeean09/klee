@@ -1,6 +1,8 @@
 import React from 'react';
 import * as KEY from './key.js';
 import Instafeed from 'instafeed.js';
+import ModalStyle from './ModalStyle.js';
+import Modal from 'react-modal';
 import '../styles/ig.css';
 
 class Ig extends React.Component {
@@ -26,6 +28,9 @@ class Ig extends React.Component {
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
       resolution: 'standard_resolution',
+      success: function(data) {
+        console.log(data);
+      },
       filter: function(image) {
           console.log(image);
            if (image.type === 'image') {
@@ -39,7 +44,7 @@ class Ig extends React.Component {
            }
            return true;
        },
-      template: '<div id="ig-img">{{model.template}}</div>',
+      template: '<div id="ig-img"><a href={{link}}>{{model.template}}</a></div>',
       limit: 30
     });
     feed.run();
