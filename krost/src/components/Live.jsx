@@ -21,12 +21,6 @@ class Live extends React.Component {
             <ul>Tickets</ul>
           </div>
           <div className="live-list-items">
-            <ul>July 30</ul>
-            <ul>DBA Bar & Gallery</ul>
-            <ul>256 S. Main St. Pomona, CA 91766</ul>
-            <ul>FREE</ul>
-          </div>
-          <div className="live-list-items">
             <ul>Sept 16</ul>
             <ul>Alta Coffee</ul>
             <ul>506 31st St. Newport Beach, CA 92663</ul>

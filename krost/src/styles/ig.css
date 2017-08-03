@@ -3,10 +3,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+
+.bg-img-ig {
+  background-image: url('../images/sf-ca.jpg');
 }
 
 .ig-header {
-  margin: 70px 0 50px 0;
+  margin: 50px 0 90px 0;
 }
 
 .ig-header > h1 > a {

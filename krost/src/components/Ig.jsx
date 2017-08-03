@@ -2,6 +2,7 @@ import React from 'react';
 import * as KEY from './key.js';
 import Instafeed from 'instafeed.js';
 import '../styles/ig.css';
+import '../styles/App.css';
 import FontAwesome from 'react-fontawesome';
 import guitar from '../images/guitar.png';
 
@@ -17,22 +18,12 @@ class Ig extends React.Component {
   }
 
   fetchPhotos() {
-    // fetch(`https://api.instagram.com/oauth/authorize/?client_id=${KEY.IG.client_id}&redirect_uri=${KEY.IG.redirect_uri}&response_type=token`)
-    //   .then(res => res.json())
-    //   .then(json => {
-    //     this.setState({info: json});
-    //   });
-    //   console.log(this.state.info);
     let feed = new Instafeed({
       get: 'user',
       userId: `${KEY.NAME2.user_id}`,
       accessToken: `${KEY.NAME2.token}`,
       resolution: 'standard_resolution',
-      success: function(data) {
-        console.log(data);
-      },
       filter: function(image) {
-          console.log(image);
            if (image.type === 'image') {
                console.log(image.images.standard_resolution.url);
                image.template = '<img src="' + image.images.standard_resolution.url + '" />';
@@ -45,7 +36,7 @@ class Ig extends React.Component {
            return true;
        },
       template: '<div id="ig-img">{{model.template}}</div>',
-      limit: 20
+      limit: 9
     });
     feed.run();
   }
@@ -53,6 +44,9 @@ class Ig extends React.Component {
   render() {
     return(
       <div className="ig-main">
+        <div className="bg">
+          <div className="bg-img bg-img-ig"></div>
+        </div>
         <div className="ig-header">
           <h1><a href="https://www.instagram.com/krostout/" target="_blank"
             rel="noopener noreferrer">Instagram</a></h1>
