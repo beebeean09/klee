@@ -15,7 +15,6 @@ class About extends React.Component {
               <FontAwesome
                 className='env'
                 name='envelope-o'
-                size='0.5x'
                 />krostout@gmail.com</ul>
             <ul className="genre">ambient / alternative / indie / folk</ul>
             <ul>KROST is a loopin singer-songwriter based in socal, painting melodies across mellow backdrops of ambient sounds.
