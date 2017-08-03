@@ -3,6 +3,7 @@ import Ig from './Ig.jsx';
 import '../styles/about.css';
 import '../styles/App.css';
 import aboutImg from '../images/abtme1.png';
+import FontAwesome from 'react-fontawesome';
 
 class About extends React.Component {
   render() {
@@ -10,7 +11,12 @@ class About extends React.Component {
       <div className="about-wrapper">
         <div className="about-main">
           <div className="about-info">
-            <ul>krostout@gmail.com</ul>
+            <ul className="fa-env">
+              <FontAwesome
+                className='env'
+                name='envelope-o'
+                size='0.5x'
+                />krostout@gmail.com</ul>
             <ul className="genre">ambient / alternative / indie / folk</ul>
             <ul>KROST is a loopin singer-songwriter based in socal, painting melodies across mellow backdrops of ambient sounds.
               She creates music conducive to tiny, warm dance parties, and has an immense love for sad songs with heartbreaking lyrics.

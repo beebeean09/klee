@@ -7,13 +7,23 @@
 }
 
 .bg-ig {
+  display: flex;
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 90vh;
 }
 
 .bg-img-ig {
-  background-image: url('../images/sf-ca.jpg');
+  background-image: url('../images/trees.jpg');
+}
+
+.ig-sc {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  top: 92px;
+  left: 35%;
 }
 
 .ig-header {
