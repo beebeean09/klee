@@ -5,11 +5,11 @@ import '../styles/App.css';
 import aboutImg from '../images/abtme1.png';
 import FontAwesome from 'react-fontawesome';
 
+// <div className="about-main">
 class About extends React.Component {
   render() {
     return(
       <div className="about-wrapper">
-        <div className="about-main">
           <div className="about-info">
             <ul className="fa-env">
               <FontAwesome
@@ -22,10 +22,10 @@ class About extends React.Component {
             </ul>
           </div>
           <img className="abtme-img" src={aboutImg} alt="abtme-img"/>
-        </div>
       </div>
     );
   }
 }
 
+// </div>
 export default About;

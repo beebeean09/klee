@@ -1,9 +1,9 @@
 .about-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  font-family: sans-serif;
-  margin-bottom: 70px;
+  margin: 5em 3em;
+  font-weight: lighter;
 }
 
 .about-main {
@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin: 70px 60px 0 60px;
+  /*margin: 70px 60px 0 60px;*/
 }
 
 .about-info {
@@ -30,7 +30,6 @@
   padding: 0;
   margin: 15px 0;
   text-align: center;
-  font-weight: lighter;
 }
 
 .about-me-img {
@@ -68,4 +67,21 @@
   display: flex;
   text-decoration: none;
   text-shadow: none;
+}
+
+@media screen and (max-width: 950px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info {
+    width: 80%;
+    margin: 0 0 2em 0;
+  }
+
+  .abtme-img {
+    margin-bottom: 15px;
+  }
+
 }

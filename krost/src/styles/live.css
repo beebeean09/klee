@@ -1,16 +1,8 @@
 .live-main {
-  /*background-color: white;*/
   text-transform: uppercase;
-  /*banner version*/
-  /*margin: 3% 6%;
-  padding: 2%;
-  box-shadow: 0px 0px 19px 6px rgba(195, 195, 195, 0.55);*/
-  margin: 2%;
-  padding: 2%;
-  /*background-color: rgba(128, 128, 128, 0.35);*/
-  color: black;
   border-radius: 10px;
   width: 100%;
+  font-weight: lighter;
 }
 
 /* banner version and white bg*/
@@ -30,11 +22,12 @@
 
 .live-list {
   text-align: center;
-  /*margin: 2%;
-  padding: 2%;*/
-  margin: 1%;
-  padding: 1%;
+  margin: 3em 5em 5em 5em;
   border-radius: 10px;
+}
+
+.live-list > h1 {
+  font-weight: lighter;
 }
 
 .live-list-items {

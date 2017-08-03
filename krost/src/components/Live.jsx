@@ -9,7 +9,7 @@ class Live extends React.Component {
   render() {
     return(
       <div className="live-main">
-          <div className="bg">
+          <div className="bg-banner">
             <div className="bg-img bg-img-live "></div>
           </div>
         <div className="live-list">

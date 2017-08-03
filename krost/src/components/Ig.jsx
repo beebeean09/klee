@@ -44,7 +44,7 @@ class Ig extends React.Component {
   render() {
     return(
       <div className="ig-main">
-        <div className="bg-ig">
+        <div className="bg-banner">
           <div className="bg-img bg-img-ig"></div>
           <iframe className="bg-img ig-sc" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/336478397&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
         </div>
