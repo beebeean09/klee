@@ -8,6 +8,7 @@ class About extends React.Component {
       <div className="about-wrapper">
         <div className="about-main">
           <h1>About Me Section</h1>
+          <div className="about-me-img"></div>
         </div>
         <Ig/>
       </div>

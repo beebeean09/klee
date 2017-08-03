@@ -54,8 +54,8 @@ class Ig extends React.Component {
     return(
       <div className="ig-main">
         <div className="ig-header">
-          <h1>HOLLER <a href="https://www.instagram.com/krostout/" target="_blank"
-            rel="noopener noreferrer">@KROSTOUT</a></h1>
+          <h1><a href="https://www.instagram.com/krostout/" target="_blank"
+            rel="noopener noreferrer">holler @krostout</a></h1>
         </div>
         <div id="instafeed">
         </div>

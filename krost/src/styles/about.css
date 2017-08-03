@@ -8,4 +8,14 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid grey;
+  background-color: lightblue;
+}
+
+
+
+.about-me-img {
+  display: flex;
+  background-image: url('../images/abtme5.png');
+  width: 100%;
+  height: 700px;
 }
