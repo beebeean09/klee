@@ -1,0 +1,16 @@
+.bg-img-sc {
+  background-image: url('../images/trees.jpg');
+}
+
+.sc-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sc-display {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+}

@@ -5,6 +5,7 @@ import '../styles/ig.css';
 import '../styles/App.css';
 import FontAwesome from 'react-fontawesome';
 import guitar from '../images/guitar.png';
+import Scloud from './Scloud.jsx';
 
 class Ig extends React.Component {
   constructor(props) {
@@ -44,10 +45,7 @@ class Ig extends React.Component {
   render() {
     return(
       <div className="ig-main">
-        <div className="bg-banner">
-          <div className="bg-img bg-img-ig"></div>
-          <iframe className="bg-img ig-sc" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/336478397&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-        </div>
+        <Scloud />
         <div className="ig-header">
           <h1><a href="https://www.instagram.com/krostout/" target="_blank"
             rel="noopener noreferrer">Instagram</a></h1>
