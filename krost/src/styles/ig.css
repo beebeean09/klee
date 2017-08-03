@@ -6,12 +6,18 @@
   width: 100%;
 }
 
+.bg-ig {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
 .bg-img-ig {
   background-image: url('../images/sf-ca.jpg');
 }
 
 .ig-header {
-  margin: 50px 0 90px 0;
+  margin: 50px 0 25px 0;
 }
 
 .ig-header > h1 > a {

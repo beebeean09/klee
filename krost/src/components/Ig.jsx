@@ -44,7 +44,7 @@ class Ig extends React.Component {
   render() {
     return(
       <div className="ig-main">
-        <div className="bg">
+        <div className="bg-ig">
           <div className="bg-img bg-img-ig"></div>
         </div>
         <div className="ig-header">
@@ -65,9 +65,4 @@ class Ig extends React.Component {
   }
 }
 
-// <FontAwesome
-//   className='music'
-//   name='music'
-//   size='2x'
-// />
 export default Ig;
