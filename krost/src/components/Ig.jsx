@@ -45,7 +45,7 @@ class Ig extends React.Component {
            return true;
        },
       template: '<div id="ig-img">{{model.template}}</div>',
-      limit: 30
+      limit: 20
     });
     feed.run();
   }
@@ -63,7 +63,7 @@ class Ig extends React.Component {
           <h1>Want to see more?</h1>
           <a href="https://www.instagram.com/krostout/" target="_blank"
             rel="noopener noreferrer">
-            <img src={guitar} alt="guitar" width="70px" height="70px"/>
+            <img src={guitar} alt="guitar" width="30px" height="30px"/>
           </a>
         </div>
       </div>

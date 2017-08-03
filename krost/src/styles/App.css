@@ -14,22 +14,24 @@ body {
 
 }
 
-.main {
+.main, .main-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .bg {
   position: relative;
   /*top: 0;*/
   /*left:-50%;*/
-  /*width: 200%;*/
-  /*height: 100vh;*/
+  width: 100%;
+  height: 100vh;
 }
 
 .bg-img {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -43,6 +45,14 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.bg-fix {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  position: static;
+}
+
 .bg-img-main {
   background-image: url('../images/krost-ladder.jpg');
 }
@@ -106,8 +116,8 @@ body {
 }
 
 .sm-container {
-  margin-top: 161px;
-  margin-right: 51px;
+  /*margin-top: 161px;*/
+  /*margin-right: 51px;*/
 }
 
 .name-header {
