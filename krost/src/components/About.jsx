@@ -8,7 +8,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 class About extends React.Component {
 
   componentWillMount() {
-    configureAnchors({ scrollDuration: 200});
+    configureAnchors({ scrollDuration: 350});
   }
 
   render() {
