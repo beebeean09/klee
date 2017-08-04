@@ -43,39 +43,31 @@
   </body>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
-  <script type='text/javascript'>
-    jQuery(document).ready(function($) {
-
-        $(".hidScroll").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
-        });
-    });
-  </script>
   <script>
-  window.onclick = function(event) {
-    if (event.target.tagName === 'VIDEO') {
-      let playButton = event.target.previousElementSibling.classList;
-      let video = document.getElementById(event.target.id);
-      if (video.paused) {
-        playButton.add('fa-hide');
-        video.play();
-      } else {
-        playButton.remove('fa-hide');
-        video.pause();
-      }
-    } else if (event.target.tagName === 'I') {
-      let iVideo = event.target.nextElementSibling;
-      let video = document.getElementById(iVideo.id);
-      let playButton = iVideo.classList;
-      if (video.paused) {
-        playButton.add('fa-hide');
-        video.play();
-      } else {
-        playButton.remove('fa-hide');
-        video.pause();
+
+    window.onclick = function(event) {
+      if (event.target.tagName === 'VIDEO') {
+        let playButton = event.target.previousElementSibling.classList;
+        let video = document.getElementById(event.target.id);
+        if (video.paused) {
+          playButton.add('fa-hide');
+          video.play();
+        } else {
+          playButton.remove('fa-hide');
+          video.pause();
+        }
+      } else if (event.target.tagName === 'I') {
+        let iVideo = event.target.nextElementSibling;
+        let video = document.getElementById(iVideo.id);
+        let playButton = iVideo.classList;
+        if (video.paused) {
+          playButton.add('fa-hide');
+          video.play();
+        } else {
+          playButton.remove('fa-hide');
+          video.pause();
+        }
       }
     }
-  }
   </script>
 </html>

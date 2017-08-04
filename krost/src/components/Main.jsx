@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import { goToAnchor, removeHash } from 'react-scrollable-anchor';
 
 class Main extends Component {
   constructor(props) {
@@ -8,22 +9,16 @@ class Main extends Component {
 
     this.clickAbout = this.clickAbout.bind(this);
     this.clickLive = this.clickLive.bind(this);
-    this.clickEvent = this.clickEvent.bind(this);
   }
 
   clickAbout() {
-    let history = this.props.history;
-    return history.push('/about');
+    goToAnchor('about-link');
   }
 
   clickLive() {
-    let history = this.props.history;
-    return history.push('/live');
+    goToAnchor('live-link');
   }
 
-  clickEvent(event) {
-    event.preventDefault();
-  }
 
   render() {
     return (
@@ -76,8 +71,8 @@ class Main extends Component {
               <p>T</p>
             </div>
             <div className="navbar">
-              <a className="sm-button hidScroll" href="#about-link">A b o u t</a>
-              <a className="sm-button hidScroll" href="#live-link">L i v e</a>
+              <div className="sm-button" onClick={this.clickAbout} onMouseMove={removeHash}>A b o u t</div>
+              <div className="sm-button " onClick={this.clickLive} onMouseMove={removeHash}>L i v e</div>
             </div>
           </div>
         </div>
