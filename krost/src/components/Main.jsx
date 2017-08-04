@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import About from './About.jsx';
-import Ig from './Ig.jsx';
-import Live from './Live.jsx';
 
 class Main extends Component {
   constructor(props) {
