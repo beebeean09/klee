@@ -71,8 +71,8 @@ class Main extends Component {
               <p>T</p>
             </div>
             <div className="navbar">
-              <div className="sm-button" onClick={this.clickAbout} onMouseMove={removeHash}>A b o u t</div>
-              <div className="sm-button " onClick={this.clickLive} onMouseMove={removeHash}>L i v e</div>
+              <div className="sm-button" onClick={this.clickAbout}>A b o u t</div>
+              <div className="sm-button " onClick={this.clickLive}>L i v e</div>
             </div>
           </div>
         </div>
