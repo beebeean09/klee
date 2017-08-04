@@ -22,7 +22,7 @@ class About extends React.Component {
                 name='envelope-o'
                 />krostout@gmail.com</ul>
               <ul className="genre">ambient / alternative / indie / folk</ul>
-              <ul>KROST is a loopin singer-songwriter based in socal, painting melodies across mellow backdrops of ambient sounds.
+              <ul>KROST is a loopin' singer-songwriter based in socal, painting melodies across mellow backdrops of ambient sounds.
                 She creates music conducive to tiny, warm dance parties, and has an immense love for sad songs with heartbreaking lyrics.
               </ul>
             </div>
