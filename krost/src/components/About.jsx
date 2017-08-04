@@ -9,7 +9,7 @@ import FontAwesome from 'react-fontawesome';
 class About extends React.Component {
   render() {
     return(
-      <div className="about-wrapper">
+      <div id="about-link" className="about-wrapper scrolly">
           <div className="about-info">
             <ul className="fa-env">
               <FontAwesome

@@ -75,8 +75,8 @@ class Main extends Component {
                 <p>T</p>
               </div>
               <div className="navbar">
-                <a className="sm-button" onClick={() => this.clickAbout()}>A b o u t</a>
-                <a className="sm-button" onClick={() => this.clickLive()}>L i v e</a>
+                <a className="sm-button" href="#about-link">A b o u t</a>
+                <a className="sm-button" href="#live-link">L i v e</a>
               </div>
             </div>
           </div>
@@ -90,3 +90,6 @@ class Main extends Component {
 }
 
 export default Main;
+
+// <a className="sm-button" onClick={() => this.clickAbout()}>A b o u t</a>
+// <a className="sm-button" onClick={() => this.clickLive()}>L i v e</a>

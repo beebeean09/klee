@@ -8,7 +8,7 @@ import '../styles/App.css';
 class Live extends React.Component {
   render() {
     return(
-      <div className="live-main">
+      <div id="live-link" className="live-main scrolly">
           <div className="bg-banner">
             <div className="bg-img bg-img-live "></div>
           </div>
