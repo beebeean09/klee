@@ -1,11 +1,9 @@
 import React from 'react';
-import Ig from './Ig.jsx';
 import '../styles/about.css';
 import '../styles/App.css';
 import aboutImg from '../images/abtme1.png';
 import FontAwesome from 'react-fontawesome';
 
-// <div className="about-main">
 class About extends React.Component {
   render() {
     return(
@@ -27,5 +25,4 @@ class About extends React.Component {
   }
 }
 
-// </div>
 export default About;

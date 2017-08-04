@@ -2,9 +2,6 @@ import React from 'react';
 import '../styles/live.css';
 import '../styles/App.css';
 
-// <div className="bg">
-//   <div className="bg-img bg-img-live"></div>
-// </div>
 class Live extends React.Component {
   render() {
     return(

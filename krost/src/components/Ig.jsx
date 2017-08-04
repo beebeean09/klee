@@ -3,7 +3,6 @@ import * as KEY from './key.js';
 import Instafeed from 'instafeed.js';
 import '../styles/ig.css';
 import '../styles/App.css';
-import FontAwesome from 'react-fontawesome';
 import guitar from '../images/guitar.png';
 import Scloud from './Scloud.jsx';
 
@@ -26,7 +25,6 @@ class Ig extends React.Component {
       resolution: 'standard_resolution',
       filter: function(image) {
            if (image.type === 'image') {
-               console.log(image.images.standard_resolution.url);
                image.template = '<img src="' + image.images.standard_resolution.url + '" />';
            } else {
             //  fa-play, fa-play-circle, fa-play-circle-o
