@@ -1,24 +1,32 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/klee/manifest.json"><link rel="shortcut icon" href="/klee/favicon-2.ico"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Cardo|Arsenal|Josefin+Sans" rel="stylesheet"><link type="text/javascript" src="path/to/instafeed.min.js"><title>krost</title><link href="/klee/static/css/main.f8c2542a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/klee/static/js/main.a33bd06c.js"></script></body><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script type="text/javascript">jQuery(document).ready(function(t){t(".hidScroll").click(function(o){o.preventDefault(),t("html,body").animate({scrollTop:t(this.hash).offset().top},1200)})})</script><script>window.onclick = function(event) {
-    if (event.target.tagName === 'VIDEO') {
-      let playButton = event.target.previousElementSibling.classList;
-      let video = document.getElementById(event.target.id);
-      if (video.paused) {
-        playButton.add('fa-hide');
-        video.play();
-      } else {
-        playButton.remove('fa-hide');
-        video.pause();
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/klee/manifest.json"><link rel="shortcut icon" href="/klee/favicon-2.ico"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Cardo|Arsenal|Josefin+Sans" rel="stylesheet"><link type="text/javascript" src="path/to/instafeed.min.js"><title>krost</title><link href="/klee/static/css/main.f8c2542a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/klee/static/js/main.03926047.js"></script></body><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script type="text/javascript">jQuery(document).ready(function($) {
+
+        jQuery(".hidScroll").click(function(event){
+            event.preventDefault();
+            jQuery('html,body').animate({scrollTop:jQuery(this.hash).offset().top}, 1200);
+        });
+    });
+
+    window.onclick = function(event) {
+      if (event.target.tagName === 'VIDEO') {
+        let playButton = event.target.previousElementSibling.classList;
+        let video = document.getElementById(event.target.id);
+        if (video.paused) {
+          playButton.add('fa-hide');
+          video.play();
+        } else {
+          playButton.remove('fa-hide');
+          video.pause();
+        }
+      } else if (event.target.tagName === 'I') {
+        let iVideo = event.target.nextElementSibling;
+        let video = document.getElementById(iVideo.id);
+        let playButton = iVideo.classList;
+        if (video.paused) {
+          playButton.add('fa-hide');
+          video.play();
+        } else {
+          playButton.remove('fa-hide');
+          video.pause();
+        }
       }
-    } else if (event.target.tagName === 'I') {
-      let iVideo = event.target.nextElementSibling;
-      let video = document.getElementById(iVideo.id);
-      let playButton = iVideo.classList;
-      if (video.paused) {
-        playButton.add('fa-hide');
-        video.play();
-      } else {
-        playButton.remove('fa-hide');
-        video.pause();
-      }
-    }
-  }</script></html>
+    }</script></html>
