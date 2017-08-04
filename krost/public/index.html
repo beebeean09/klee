@@ -41,6 +41,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+  <script type='text/javascript'>
+    jQuery(document).ready(function($) {
+
+        $(".hidScroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
+        });
+    });
+  </script>
   <script>
   window.onclick = function(event) {
     if (event.target.tagName === 'VIDEO') {

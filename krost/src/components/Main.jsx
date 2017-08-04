@@ -8,6 +8,7 @@ class Main extends Component {
 
     this.clickAbout = this.clickAbout.bind(this);
     this.clickLive = this.clickLive.bind(this);
+    this.clickEvent = this.clickEvent.bind(this);
   }
 
   clickAbout() {
@@ -18,6 +19,10 @@ class Main extends Component {
   clickLive() {
     let history = this.props.history;
     return history.push('/live');
+  }
+
+  clickEvent(event) {
+    event.preventDefault();
   }
 
   render() {
@@ -71,8 +76,8 @@ class Main extends Component {
               <p>T</p>
             </div>
             <div className="navbar">
-              <a className="sm-button" href="#about-link">A b o u t</a>
-              <a className="sm-button" href="#live-link">L i v e</a>
+              <a className="sm-button hidScroll" href="#about-link">A b o u t</a>
+              <a className="sm-button hidScroll" href="#live-link">L i v e</a>
             </div>
           </div>
         </div>
