@@ -43,28 +43,26 @@
   </body>
 
   <script>
+    function togglePlay(video, playButton) {
+      if (video.paused) {
+        playButton.add('fa-hide');
+        video.play();
+      } else {
+        playButton.remove('fa-hide');
+        video.pause();
+      }
+    }
+
     window.onclick = function(event) {
       if (event.target.tagName === 'VIDEO') {
         let playButton = event.target.previousElementSibling.classList;
         let video = document.getElementById(event.target.id);
-        if (video.paused) {
-          playButton.add('fa-hide');
-          video.play();
-        } else {
-          playButton.remove('fa-hide');
-          video.pause();
-        }
+        togglePlay(video, playButton);
       } else if (event.target.tagName === 'I') {
         let iVideo = event.target.nextElementSibling;
         let video = document.getElementById(iVideo.id);
         let playButton = iVideo.classList;
-        if (video.paused) {
-          playButton.add('fa-hide');
-          video.play();
-        } else {
-          playButton.remove('fa-hide');
-          video.pause();
-        }
+        togglePlay(video, playButton);
       }
     }
   </script>
